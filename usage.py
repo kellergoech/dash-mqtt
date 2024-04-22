@@ -54,7 +54,7 @@ def display_output(n_clicks, message_payload):
     Input('mqtt', 'incoming')
 )
 def display_incoming_message(incoming_message):
-    if (incoming_message):
+    if incoming_message:
         return incoming_message['payload']
     else:
         return dash.no_update
